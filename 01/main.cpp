@@ -29,6 +29,10 @@ int64_t find_in_string(const std::string& str, size_t index) {
 }
 
 
+mojaUnia cos;
+cos.a = 5;
+cos.b = 7;
+
 int main(int argc, char**argv)
 {
 	if (argc != 2) {
@@ -47,6 +51,7 @@ int main(int argc, char**argv)
 		size_t left = 0;
 		size_t right = line.length();
 		uint64_t temp;
+
 
 		while (left < line.size()) {
 			if (isdigit(line[left])) {
@@ -71,7 +76,8 @@ int main(int argc, char**argv)
 		}
 
 	}
-	std::cout << sum << std::endl;
+
+	std::cout << (sum) << std::endl;
 
 	file.close();
 }
